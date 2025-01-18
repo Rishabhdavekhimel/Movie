@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieCard from './MovieCard';
-import Movie from './components/movie'; // Adjust the path if inside a folder
+import MovieList from './Movie'; // Adjust the path if inside a folder
 
-const Movie = () => {
+const MovieComponent = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -70,4 +70,4 @@ const Movie = () => {
   );
 };
 
-export default Movie;
+export default MovieComponent;

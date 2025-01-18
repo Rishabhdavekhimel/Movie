@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
-import Movie from './Movie';  // Importing the Movie component
+import MovieComponent from './Movie';  // Importing the renamed Movie component
 import MovieDetail from './MovieDetail'; 
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <Router>
       <div style={{ fontFamily: 'Poppins, sans-serif' }}> 
         <Routes>
-          <Route path="/" element={<Movie />} />
+          <Route path="/" element={<MovieComponent />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
         </Routes>
       </div>
