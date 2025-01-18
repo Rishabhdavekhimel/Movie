@@ -11,7 +11,7 @@ const MovieCard = ({ id, title, description, imageUrl }) => {
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
-          {/* Link to movie details page */}
+         
           <Link to={`/movie/${id}`} className="btn btn-primary mt-auto">
             View Details
           </Link>
